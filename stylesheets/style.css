@@ -42,6 +42,7 @@ p.project_lang {
 
 p.project_desc {
    clear: left;
+   text-align: left;
 }
 
  p.center {
