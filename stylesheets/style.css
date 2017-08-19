@@ -25,6 +25,7 @@ h2 {
 }
 
 p.project_name {
+  float: left;
   font-weight: bold;
   font-size: 15px;
   color: #FF9D00;
@@ -32,15 +33,24 @@ p.project_name {
 }
 
 p.project_lang {
+  float: right;
   font-weight: bold;
   font-size: 13px;
   color: #FFD394;
   text-align: right;
 }
 
-p.center {
+p.project_desc {
+   clear: left;
+}
+
+ p.center {
     text-align: center;
     }
+
+p.divider {
+  border-top: 1px solid #FF9D00;
+}
 
 a:link, a:visited {
   color: #FF9D00;
@@ -51,6 +61,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.center {
+    text-align: center;
+}
+
+
 .floating-box {
     display: inline-block;
     width: 300px;
@@ -59,23 +74,9 @@ a:hover {
     border: 1px solid #FF9D00;
     padding: 20px 20px 20px 20px; 
     vertical-align: top; 
-}
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-     border: 1px solid white; 
-     table-layout: fixed;
-     border-spacing: 15px;
-
-}
-
-  td {
-    border: 1px solid #FF9D00;
-    padding: 15px;
-    background-color: white;
-  
 } 
+
 
 
 </style>
