@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+
+
+</head>
+
+<title>Open Source at AWS</title>
+
+<a href="https://aws.amazon.com/">
+<img src="https://avatars0.githubusercontent.com/u/2232217?v=4&s=200" alt="Amazon Web Services logo" style="width:100px">
+</a>
+
+<h1>Open Source at AWS</h1>
+<p class=center>We need some interesting intro text here.</p>
+
+<body>
+
+
+<h2>Featured Projects</h2>
+<div class="center">
+<div class="floating-box"><p class=project_name><a href="https://github.com/apache/incubator-mxnet">Apache MXNet</a></p>
+<p class="project_desc">A scalable and efficient library for deep learning.</p>
+<p><a href="http://mxnet.io/">Apache MXNet site</a></p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://blox.github.io/">Blox</a></p>
+<p class="project_desc">A collection of open source projects for container management and orchestration on Amazon ECS.
+</p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/boto/boto3">Boto</a></p>
+<p class=project_lang>Python</p>
+<p class="project_desc">AWS SDK for Python.</p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/awslabs/sockeye">Sockeye</a></p>
+<p class=project_lang>Python</p>
+<p class="project_desc">Sequence-to-sequence framework with a focus on Neural Machine Translation based on Apache MXNet.</p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/aws/aws-cli">CLI</a></p>
+<p class=project_lang>Python</p>
+<p class="project_desc">Universal Command Line Interface for Amazon Web Services.</p>
+</div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/amzn/amazon-dsstne">DSSTNE</a></p>
+<p class=project_lang>C++</p>
+<p class="project_desc">Deep Scalable Sparse Tensor Network Engine (DSSTNE) is an Amazon developed library for building Deep Learning (DL) machine learning (ML) models.</p>
+</div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/aws/aws-sdk-go">SDK-Go</a></p>
+<p class=project_lang>Go</p>
+<p class="project_desc">AWS SDK for the Go programming language.</p>
+</div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/aws/aws-sdk-js">SDK-Javascript</a></p>
+<p class=project_lang>Javascript</p>
+<p class="project_desc">AWS SDK for JavaScript in the browser and Node.js.</p>
+</div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/aws/chalice">Chalice</a></p>
+<p class=project_lang>Python</p>
+<p class="project_desc">Python serverless microframework for AWS.</p>
+</div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/awslabs/s2n">S2N</a></p>
+<p class="project_desc">An implementation of the TLS/SSL protocols.</p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/awslabs/aws-shell">Shell</a></p>
+<p class="project_desc">An integrated shell for working with the AWS CLI.</p></div>
+
+<div class="floating-box"><p class=project_name><a href="https://github.com/aws/aws-fpga">FPGA</a></p>
+<p class="project_desc">The AWS EC2 FPGA Hardware and Software Development Kit.</p></div>
+</div>
+
+<h2>Search GitHub Projects</h2>
+<div class="center">
+<div class="floating-box">
+<p>Full-text search across all our GitHub accounts. Results will be displayed on GitHub search page.</p>
+
+<form id="search" onsubmit="return doSearch();">
+  Search: <input type="text" name="q">
+  <input type="button" onclick="doSearch()" value="Submit">
+</form>
+
+<script language="javascript">
+var accounts = [
+    'ajaxorg', 
+'alexa', 
+'amazon-archives', 
+'amazonwebservices',
+'amzn',
+'aws',
+'aws-quickstart', 
+'aws-samples',
+'awsdocs', 
+'awslabs', 
+'blindsightcorp',
+'blox',
+'boto', 
+'c9', 
+'Carbonado',
+'cloud9ide', 
+'Goodreads',
+'Justintv',
+'Twitchdev',
+'twitchscience',
+'twitchtv',
+'Zappos',
+
+
+];
+
+function doSearch() {
+    // eg: https://github.com/search?utf8=%E2%9C%93&q=fpga+user%3Aaws+user%3Aawsdocs+user%3Aawslabs+user%3Aamzn+user%3Ablox&type=Repositories&ref=advsearch&l=&l=
+    var search = document.forms["search"]["q"].value;
+    var url = 'https://github.com/search?utf8=%E2%9C%93&q=' + search;
+    for (var i = 0; i < accounts.length; i++) {
+        url = url + '+user%3A' + accounts[i];
+    }
+    url = url + '&type=Repositories&ref=advsearch&l=&l=';
+    window.location.href = url;
+    return false;
+}
+</script>
+</div>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+ <footer>
+        <p class=divider>Copyright 2014-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>
