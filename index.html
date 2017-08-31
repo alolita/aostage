@@ -70,7 +70,7 @@
 <h2>Search GitHub Projects</h2>
 <div class="center">
 <div class="floating-box">
-<p>Full-text search across all our GitHub accounts. Results will be displayed on GitHub search page.</p>
+<p>Full-text search across all our GitHub accounts. Results will be displayed in a new tab (on GitHub).</p>
 
 <form id="search" onsubmit="return doSearch();">
   Search: <input type="text" name="q">
@@ -113,7 +113,7 @@ function doSearch() {
         url = url + '+user%3A' + accounts[i];
     }
     url = url + '&type=Repositories&ref=advsearch&l=&l=';
-    window.location.href = url;
+    window.open(url, '_blank');
     return false;
 }
 </script>
