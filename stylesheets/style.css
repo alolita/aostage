@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px "HelveticaNeueLight", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   color: #444444;
   min-width: 960px;
@@ -15,7 +15,7 @@ h1 {
   font-size: 60px;
   color: #FFFFFF;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 h2 {
@@ -24,6 +24,7 @@ h2 {
   background-color: #FF9D00;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 p.project_name {
